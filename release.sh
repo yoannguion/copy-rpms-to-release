@@ -14,6 +14,8 @@ return $?
 }
 
 echo "release url $RELEASE_ASSETS_UPLOAD_URL"
+RELEASE_ASSETS_UPLOAD_URL=${RELEASE_ASSETS_UPLOAD_URL%\{?name,label\}}
+echo "release url $RELEASE_ASSETS_UPLOAD_URL"
 
 
 echo "copying RPMS/SRPMS ..."
