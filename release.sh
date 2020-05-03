@@ -17,7 +17,7 @@ echo "release url $RELEASE_ASSETS_UPLOAD_URL"
 
 
 echo "copying RPMS/SRPMS ..."
-find . -name "*.rpm"-type f | xargs -i uploadToGitHub {} .
+find . -name "*.rpm" -type f | xargs -i uploadToGitHub {} .
 
 
 
